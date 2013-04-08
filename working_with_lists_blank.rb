@@ -184,6 +184,17 @@ names = ["Neal", "Mike", "Jeff", "Raghu"]
 # end
 
 
+
+
+
+
+
+
+
+
+
+
+
 # But there's a way to clean it up even more. The .each method will count the length of the array for you, AND it will give you back each element without you needing to manually access the array.
 
 # names.each do |student|
@@ -191,6 +202,16 @@ names = ["Neal", "Mike", "Jeff", "Raghu"]
 # end
 
 # Notice I named the block variable descriptively; before it made sense to call it 'i' because each time through, it was the index that got assigned to it (because that's what .each_index hands back each time through). This time I get the actual object in the cell (because that's what .each hands back each time through), so I called it 'student'.
+
+
+
+
+
+
+
+
+
+
 
 
 # What about hometowns? Let's use our other kind of list, hashes, to keep track of this info:
