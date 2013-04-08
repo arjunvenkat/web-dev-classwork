@@ -6,8 +6,9 @@
 # This is how you print "howdy" five times:
 
 # 5.times do
-#   puts "howdy"
+#   puts 'howdy'
 # end
+
 
 # Everything that comes between the 'do' and 'end' gets repeated 5 times.
 
@@ -20,6 +21,13 @@
 #  howdy 3
 #  howdy 4
 # using the .times method. Try adding to the code above.
+
+
+
+
+
+
+
 
 # Hint: Try creating a placeholder variable and changing it each time through to keep track of where you are.
 
@@ -116,36 +124,6 @@
 names = ["Neal", "Mike", "Jeff", "Raghu"]
 
 
-
-
-# There are many methods you can call on Arrays, some of which you've already seen.
-# Try the following in IRB: names.length, names.first, names.last
-
-# But to access a thing in the middle of the list, I need to tell Ruby its index in the array.
-# It's similar to referencing a cell in a column in Excel. Try this in IRB: names[1]
-
-# Notice that the numbering of cells starts at 0, not at 1. Try accessing the 0th cell of names.
-
-# So now I have a list of names to help me learn. But now I have to remember locations, which is not a big improvement overjust remembering the name itself.
-
-# It would be nice if I could access a cell by something other than a number. Enter the hash: a list where the cells are named something meaningful rather than just numbered.
-
-# names_hash = { "hoodie" => "Neal", "snuggie" => "Mike", "blackhawks" => "Jeff", "beard" => "Raghu" }
-# 
-# # Now I don't need to remember the order; I just need to know what I'm looking for.
-# 
-# puts "Key hoodie: #{names_hash[:hoodie]}"
-# puts "Key hockey: #{names_hash[:hockey]}"
-
-# Cool, huh? Now I can look things up in my list without needing to know the order.
-# For my fellow Excel junkies, it's kind of like a VLOOKUP.
-
-
-#################################
-# Automating working with lists
-#################################
-
-# Anyway, back to arrays.
 # Challenge: Using the .times method, print each element in the names array.
 # Your output should look like this:
 
@@ -181,7 +159,6 @@ names = ["Neal", "Mike", "Jeff", "Raghu"]
 
 
 # Does your solution work if we add a name to the list? If not, try using the .length method to make it smarter.
-
 
 
 
@@ -300,9 +277,9 @@ students = [student1, student2, student3, student4]
 
 
 
-students.each do |student_hash|
-  puts "#{student_hash["first"].capitalize} #{student_hash["last"].capitalize} is from #{student_hash["hometown"].capitalize}."
-end
+# students.each do |student_hash|
+#   puts "#{student_hash["first"].capitalize} #{student_hash["last"].capitalize} is from #{student_hash["hometown"].capitalize}."
+# end
 
 
 
@@ -317,7 +294,7 @@ shopping_cart = [
   {'name' => "iMac 27", 'price' => 1699, 'quantity' => 1},
   {'name' => "MacBook Air 13", 'price' => 1299, 'quantity' => 1}
   ]
-  
+
 sales_tax = {"IL" => 0.115, "IN" => 0.09, "MI" => 0.06, "WI" => 0.056}
 
 params = {
