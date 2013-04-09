@@ -11,6 +11,11 @@
 # use the size input from the user to print out a triangle in terminal
 # example output
 
+# puts "Enter a number for your shape size"
+# size = gets.chomp.to_i
+
+
+
 #
 ##
 ###
@@ -108,9 +113,6 @@
 
 # possible solutions
 
-# puts "Enter a number for your shape size"
-# size = gets.chomp.to_i
-
 # size.times do |count|
 #   print " " * (size - 1 - count)
 #   print "#" * count
@@ -145,11 +147,11 @@
       ##
        #
 
-# size.times do |count|
-#   print " " * (count)
-#   print "#" * (size - count)
-#   puts
-# end
+size.times do |count|
+  print " " * (count)
+  print "#" * (size - count)
+  puts
+end
 
 
 
