@@ -147,11 +147,11 @@
       ##
        #
 
-size.times do |count|
-  print " " * (count)
-  print "#" * (size - count)
-  puts
-end
+# size.times do |count|
+#   print " " * (count)
+#   print "#" * (size - count)
+#   puts
+# end
 
 
 
