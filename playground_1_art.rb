@@ -114,8 +114,8 @@
 # possible solutions
 
 # size.times do |count|
-#   print " " * (size - 1 - count)
-#   print "#" * count
+#   print " " * (size - count)
+#   print "#" * (count + 1)
 #   puts
 # end
 
