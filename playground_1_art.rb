@@ -2,7 +2,7 @@
 # Use the size input from the user to print out a straight line
 
 # puts "Enter an integer for your line size: "
-# size = gets.chomp
+# size = gets.chomp.to_i
 # puts '-' * size
 
 
