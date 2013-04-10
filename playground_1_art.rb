@@ -1,6 +1,8 @@
 # Warm up:
 # Use the size input from the user to print out a straight line
 
+# puts "Enter an integer for your line size: "
+# size = gets.chomp
 # puts '-' * size
 
 
