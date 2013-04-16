@@ -275,6 +275,22 @@
 
 
 
+# One possible solution
+
+# 10.times do |row|
+#   num_string = ""
+#   10.times do |column|
+#     num_string << "#{10*row + (column + 1)} "
+#   end
+#   puts num_string
+# end
+
+
+
+
+
+
+
 
 # Print out a large x
 # sample output:
@@ -291,3 +307,23 @@
 #   x               x
 # x                   x
 #
+
+
+
+
+
+
+# One possible solution"
+# num = 11
+# num.times do |row|
+#   num.times do |column|
+#     if column == row  || column == (num - row - 1)
+#       print "X "
+#     else
+#       print "  "
+#     end
+#   end
+#   puts
+# end
+
+
