@@ -266,6 +266,14 @@ The following syntax can also be used:
 
 This syntax works because we are already inside the Movie class. The interpreter will assume you're calling `director_id` on an instance of the Movie class and specify that work in the background. So when you write `Director.find_by_id(director_id)`, the interpreter will actually process `Director.find_by_id(self.director_id)`. In this case, `self` refers to a Movie object.
 
+**Using terminal to create migration files -**
 
+If you use a specific syntax, you can create as well as fill up a migration file in terminal. For example, if you use the terminal command `$ rails g migration AddAuthorIdToBooks author_id:book` you will get a migration file that looks like:
 
+    class AddAuthorIdToBooks < ActiveRecord::Migration
+      def change
+        add_column :books, :author_id, :integer
+      end
+    end
 
+You get the add_column method filled out for free! Lets looks at the syntax of our terminal command again. If we break the name of the migration down into pieces it looks like: `Add AuthorId To Books`. This can generalize to `Verb ColumnName To TableName`.  So if you wanted to `Verb` a `ColumnName` to the `TableName` table, you would use a command like `rails g migration VerbColumnNameToTableName column_name:data_type`. If you were removing the column, you wouldn't need the `column_name:data_type` part.
